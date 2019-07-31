@@ -1,0 +1,37 @@
+li {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  .box {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: white;
+    &:hover {
+        .front {
+            transform: rotateX(90deg);
+        }
+        .bottom {
+            transform: rotateX(0deg);
+        }
+    }
+    .front, .bottom {
+      position: absolute;
+      perspective: 2000px;
+      transform-style: preserve-3d;
+      transform-origin: 50% 50% -12px;
+      transition: transform 430ms cubic-bezier(.46, 1, .25, 1);
+      border-radius: 6px;
+    }
+    .front {
+      background: white;
+    }
+    .bottom {
+        transform: rotateX(-90deg);
+        background: #69b18c;
+        img {
+            filter: invert(1);
+        }
+    }
+  }
+}

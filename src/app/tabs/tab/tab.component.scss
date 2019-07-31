@@ -1,0 +1,12 @@
+.c-tabs__list {
+    &:hover {
+        background: transparent;
+    }
+}
+
+.box {
+    position: relative;
+    .front, .bottom {
+        // position: absolute;
+    }
+}

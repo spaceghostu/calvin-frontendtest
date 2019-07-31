@@ -12,6 +12,15 @@ export class UserComponent implements OnInit {
   label = 'Hi, My name is' //TODO change
   value = 'Calvin' //TODO change
 
+  tabs = [
+    {icon: 'user'},
+    {icon: 'email'},
+    {icon: 'calendar'},
+    {icon: 'map-location'},
+    {icon: 'call'},
+    {icon: 'locked'}
+  ]
+
   constructor() { }
 
   ngOnInit() {
