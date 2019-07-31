@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from './api.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'calvin';
+  user: any;
+
+  constructor(private api: ApiService) {
+    this.api.getUser().subscribe((data: any) => {
+      this.user = data.results[0];
+    });
+  }
+
 }
