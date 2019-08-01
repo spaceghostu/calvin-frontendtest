@@ -9,11 +9,12 @@ export class TabComponent implements OnInit {
 
   assetPath = "./assets/icons/svg/misc/"
 
+  @Input() active: boolean;
+
   _icon;
   @Input()
   set icon(val: string) {
     this._icon = this.assetPath + val + '.svg';
-    console.log(val);
   };
 
   get icon() {

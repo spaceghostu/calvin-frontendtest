@@ -14,12 +14,12 @@
       </div>
     </div>
     <ul class="c-tabs l-row u-grid-justify--center u-padding--md">
-      <app-tab icon="user"></app-tab>
-      <app-tab icon="email"></app-tab>
-      <app-tab icon="calendar"></app-tab>
-      <app-tab icon="map-location"></app-tab>
-      <app-tab icon="call"></app-tab>
-      <app-tab icon="locked"></app-tab>
+      <app-tab icon="user" [active]="activeTabName == 'name'" (mouseover)="setActiveTab('name')"></app-tab>
+      <app-tab icon="email" [active]="activeTabName == 'email'" (mouseover)="setActiveTab('email')"></app-tab>
+      <app-tab icon="calendar" [active]="activeTabName == 'birthday'" (mouseover)="setActiveTab('birthday')"></app-tab>
+      <app-tab icon="map-location" [active]="activeTabName == 'address'" (mouseover)="setActiveTab('address')"></app-tab>
+      <app-tab icon="call" [active]="activeTabName == 'phone'" (mouseover)="setActiveTab('phone')"></app-tab>
+      <app-tab icon="locked" [active]="activeTabName == 'password'" (mouseover)="setActiveTab('password')"></app-tab>
     </ul>
   </div>
 </div>

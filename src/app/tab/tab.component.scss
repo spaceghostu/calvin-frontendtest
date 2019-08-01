@@ -7,6 +7,7 @@ li {
     width: 48px;
     height: 48px;
     background: white;
+    &.active,
     &:hover {
         .front {
             transform: rotateX(90deg);
@@ -28,7 +29,7 @@ li {
     }
     .bottom {
         transform: rotateX(-90deg);
-        background: #69b18c;
+        background: #439539;
         img {
             filter: invert(1);
         }
