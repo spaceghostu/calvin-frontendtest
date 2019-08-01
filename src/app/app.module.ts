@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
-import { TabsModule } from './tabs/tabs.module';
 import { TabComponent } from './tab/tab.component';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { TabComponent } from './tab/tab.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    TabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
